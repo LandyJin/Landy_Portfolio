@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+@import url('https://fonts.googleapis.com/css?family=Chango');
+.profile {
+    position: relative;
+    display: block;
+    width: 700px;
+    height: 350px;
+    background: rgb(206, 206, 197);
+    border-radius: 15px;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    border: 3px double white;
+  }
+  
+  .profileImage {
+    background-image: url("../assets/profile.jpg");
+    opacity: 0.6;
+    background-size: 340px 450px;
+    margin-top: -38px;
+    margin-left: -52px;
+    width:340px;
+    height: 450px;  
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  
+  .profileImage:before {
+    position: relative;
+    -ms-transform: skew(-20deg,0deg);
+    -webkit-transform: skew(-20deg,0deg);
+    transform: skew(-20deg,0deg);
+    /*outline:1px solid #fff;*/
+    z-index:-1;
+  }
+  
+  .backCard {
+    width: 500px;
+    height: 150px;
+    margin-top: -380px;
+    margin-left: 230px;
+  }
+  
+  .backCard h1 {
+    font-family: 'Paytone One';
+  }
+  
+  .backCard p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .backCard a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .backCard .fa{
+      font-size: 18px;
+  }
+
+  .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+  }
+  
+  .backCard .icon-box{
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    top: 75px;
+    left: 30%;
+    display: inline-block;
+    border: 2px solid white;
+    margin-top: 180px;
+    margin-left: 230px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  
+  .backCard .icon-box-2{
+    margin-left: 310px;
+  }
+
+  a:hover{
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  .jobCategory {
+    font-family: 'Chango';
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 27px;
+  }
+  
+  .icon-box:hover {
+    box-shadow: inset 0 50px 0 0 black;
+  }
+  
+
+  @media screen and (max-width: 700px){
+    .profile {
+        width: 500px;
+        height: 250px;
+      }
+      .profileImage {
+        background-size: 250px 330px;
+        width:250px;
+        height: 330px;
+      }
+      .backCard {
+        margin-top: -280px;
+        margin-left: 200px;
+        width: 260px;
+        height: 100px;
+      }
+      .backCard h1 {
+        font-size: 25px;
+      }
+      .jobCategory {
+        font-size: 13px;
+      }
+      .backCard p {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .backCard .fa{
+        font-size: 10px;
+      }
+      .backCard .icon-box{
+        height: 25px;
+        width: 25px;
+        margin-top: 110px;
+        margin-left: 160px;
+        border: 1px solid white;
+      }
+      .backCard .icon-box-2{
+        margin-left: 210px;
+      }
+  }
+
+  @media screen and (max-width: 420px){
+    .profile {
+        width: 300px;
+        height: 160px;
+      }
+      .profileImage {
+        background-size: 155px 220px;
+        width:155px;
+        height: 220px;
+        margin-left: -25px;
+      }
+      .backCard {
+        margin-top: -190px;
+        margin-left: 120px;
+        width: 160px;
+        height: 100px;
+      }
+      .backCard h1 {
+        font-size: 15px;
+      }
+      .jobCategory {
+        font-size: 8px;
+        margin-top: 2px;
+      }
+      .backCard p {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 8px;
+      }
+      .backCard .fa{
+        font-size: 8px;
+      }
+      .backCard .icon-box{
+        font-size: 8px;
+        height: 20px;
+        width: 20px;
+        padding: 3px;
+        margin-top: 38px;
+        margin-left: 100px;
+        border: 1px solid white;
+      }
+      .backCard .icon-box-2{
+        margin-left: 135px;
+      }
+  }

@@ -1,0 +1,93 @@
+.indexVideo {
+  z-index: -100;
+  width:100%;
+  height:500px;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.screenVideo video {
+  width: 100%;
+  height: 500px;
+}
+
+.screenVideo {
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 500px;
+  width: auto; 
+  height: 500px;
+  z-index: -100;
+}
+
+#skills {
+  font-family: sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 50%;
+  margin-top:15%;
+  margin-bottom: 15%;
+  margin-left: 100px;
+  float: left;
+  font-size: 1.2rem;
+}
+
+#intro {
+  margin-top: 0;
+  font-family: 'Paytone One';
+}
+
+#skills p {
+  font-size: 15px;
+}
+
+.skillBar {
+  width: 100%;
+  height: auto;
+  background-color: rgba(212, 211, 211, 0.53);
+  margin-top: 5px;
+}
+
+.myBar {
+  height: 15px;
+  background: linear-gradient(to bottom right, rgba(255, 128, 128, 0.8), rgba(255, 194, 153, 0.8), rgba(255, 230, 230, 0.8));
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px; 
+  position: relative;
+}
+
+.myBar center {
+  margin-top: -5px;
+}
+
+@media screen and (min-width: 888px){
+  .indexVideo {height: 900px;}
+  .screenVideo video {height: 900px;}
+  .screenVideo {
+    min-height: 900px;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .screenVideo {height: auto;}
+  .skillBar {width: 48%; margin-right: 2%; float: left;}
+}
+
+@media screen and (max-width: 887px) {
+  #skills {width: 70%; margin-left: 20px;}
+  #skills h1 {font-size: 2rem;}
+  .skillBar {margin-top: 10px; height: 15px}
+  .myBar {height: 15px; font-size: 12px; padding: 0;}
+}
+
+@media screen and (max-width: 900px){
+  .skillDescription{width: calc(100% - 100px)}
+  .processBar {width: 100%;}
+}

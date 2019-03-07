@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Inder');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+@import url('https://fonts.googleapis.com/css?family=Times+New+Roman');
+/*Education and Work Timeline*/
+.resume{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: rgb(233, 223, 219);
+    font-family: 'Inder'; 
+    font-size: 15px;
+    color: black;
+  }
+  
+  #resume h1{font-family: 'Paytone One';text-align: center; text-transform: uppercase;}
+  
+  #resume span{font-family: 'Times New Roman'; font-size: 30px; font-weight: bold; margin-left: calc(45%);}
+  
+  #resume p{text-align: center; color: rgb(124, 124, 124)}
+  
+  .timeline {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    list-style-type: none;
+  }
+  
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 5px;
+    border-radius: 50%;
+    height: 100%;
+    margin-left: 10px;
+    background: black;
+    z-index: 5;
+  }
+  
+  .timeline li {
+    padding: 2em 0;
+  }
+  
+  .directionLeft,
+  .directionRight {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .flagWrapper {
+    text-align: center;
+    position: relative;
+  }
+  
+  .timelineIcon {
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    margin-left: calc(50% - 18px) !important;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: white;
+    transform: scale(1,1.17);
+  }
+  
+  .work {
+    transform: scale(1.17,1.17);
+  }
+  
+  .circle-icon {
+    background: black;
+    padding:10px;
+    border-radius: 100%;
+  }
+  
+  .timeline .timelineIcon{
+    position: absolute;
+    z-index: 5;
+    width: 0;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0;
+  }
+  
+  .flagLeft,
+  .flagRight {
+    position: relative;
+    background: black;
+    z-index: 15;
+    padding: 6px 10px;
+    text-align: left;
+    border-radius: 5px;
+    color: white;
+    width: 42%;
+    margin-left: calc(50% + 75px);
+  }
+  
+  .flagLeft {
+    border-radius: 5px;
+    margin-left: 2%;
+    width: calc(50% - 75px);
+  }
+  
+  .flag h3 {
+    padding-top: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  
+  .flag p {
+    left: 0;
+    font-size: 15px;
+    color: rgb(202, 202, 202);
+    text-align: left !important;
+  }
+  
+  .directionRight .flag:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left:-8px;
+    height: 0;
+    width: 0;
+    transform: rotate(270deg);
+    margin-left: -8px;
+    border: solid transparent;
+    border-bottom-color: black;
+    border-width: 8px;
+    pointer-events: none;
+  }
+  
+  .directionLeft .flag:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right:-16px;
+    height: 0;
+    width: 0;
+    transform: rotate(90deg);
+    margin-left: calc(101.2%);
+    border: solid transparent;
+    border-bottom-color: black;
+    border-width: 8px;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 770px) {
+    .resume {
+      padding-bottom: 150px;
+      padding-right: 15px;
+    }
+    
+    .flagLeft,
+    .flagRight {
+      width: 80%;
+      margin: auto;
+      z-index: 5;
+      margin-top: 55px;
+      top: 65px;
+    }
+  
+    .directionLeft .flag:before,
+    .directionRight .flag:after {
+      top: -16px;
+      left: calc(50% + 12px);
+      transform: inherit;
+      margin-left: -8px;
+      border-width: 8px;
+    }
+  }

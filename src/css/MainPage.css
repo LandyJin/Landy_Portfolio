@@ -1,0 +1,12 @@
+.toggleSlide-enter {
+    height: 0px;
+}
+.toggleSlide-enter.toggleSlide-enter-active {
+    height: 300px;
+    -webkit-transition: height 300ms ease;
+}
+
+.toggleSlide-exit.toggleSlide-exit-active {
+    height: 0;
+    -webkit-transition: height 300ms ease;
+}

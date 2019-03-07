@@ -1,10 +1,24 @@
 {
   "name": "personal_portfolio",
+  "author": "Landy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://landyportfolio.herokuapp.com/",
+  "bugs": {
+    "url": "https://github.com/LandyJin/personal_portfolio/issues"
+  },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "react": "^16.8.4",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8"
   },
   "scripts": {

@@ -1,0 +1,76 @@
+.moreAboutMe {
+    position: relative;
+    width:100%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(223, 233, 229);
+  }
+  
+  .showBox {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 15px;
+    height: 35px;
+    width: 80px;
+    margin-top: 15px;
+    margin-right: 30px;
+    padding: 5px;
+    left: 30%;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  
+  .showBox:hover {box-shadow: inset 0 50px 0 0 rgba(0, 0, 0, 0.185);}
+  
+  .moreAboutMeDetail {
+    margin-top: 10px;
+    padding: 0 20px 0 50px;
+  }
+  
+  .moreAboutMeDescription {
+    margin-top: 55px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    font-family: 'Inder'; 
+    font-size: 15px;
+  }
+  
+  .moreAboutMeDescription h1 {font-family: 'Chonburi';}
+  
+  .moreAboutMeDescription span{font-family: 'Times New Roman'; font-size: 25px; font-weight: bold;}
+  
+  .moreAboutMeImg img {width: 98%;height:100%;}
+  
+  .aboutMeDetail {
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    width: 150px;
+    margin-top: -200px;
+    font-family: 'Annie Use Your Telescope';
+    font-size: 20px;
+  
+    margin-left: calc(100% - 90px);
+  }
+  
+  .aboutMeDetail span {font-family: 'Times New Roman'; font-size: 20px; font-weight: bold;}
+
+  @media screen and (max-width: 768px) {
+  .moreAboutMeDetail {
+    margin-top: 180px;
+  }
+  .aboutMeDetail {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .moreAboutMeDetail {
+    margin-top: 100px;
+  }
+}

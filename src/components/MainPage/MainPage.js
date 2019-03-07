@@ -9,6 +9,7 @@ import TopOfPage from './../TopOfPage/TopOfPage';
 import AboutMe from './../AboutMe/AboutMe';
 import MoreAboutMe from './../AboutMe/MoreAboutMe';
 import Experience from './../Experience/Experience';
+import Skills from './../Skills/Skills'
 
 export class MainPage extends Component {
     constructor(props) {
@@ -43,7 +44,8 @@ handleClick() {
             timeout = {300}>
             { this.state.visible ? <MoreAboutMe handleClick = {this.handleClick} /> : null}
         </CSSTransitionGroup>
-
+        
+        <Skills/>
         <Experience/>
       </div>
     )

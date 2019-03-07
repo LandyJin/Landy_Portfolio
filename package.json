@@ -17,10 +17,12 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
+    "chart.js": "^2.7.3",
     "font-awesome": "^4.7.0",
     "react": "^16.8.4",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.5",
+    "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8"

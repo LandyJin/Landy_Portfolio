@@ -17,7 +17,7 @@ class Menu extends Component {
   componentDidMount() {
     window.innerWidth < 900 ?
     this.setState({
-      width: "100",
+      width: "250px",
       display: "none"
     }):
     this.setState({

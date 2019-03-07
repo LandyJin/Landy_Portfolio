@@ -54,6 +54,7 @@
 
   .menu .closebtn {
     display: none;
+    cursor: pointer;
   }
 }
 
@@ -93,7 +94,7 @@
 
   .sidenav {
     height: 100%;
-    /* width: 100; */
+    width: 250px;
     position: fixed;
     top: 0;
     right: 0;

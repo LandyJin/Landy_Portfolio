@@ -7,6 +7,10 @@
   "bugs": {
     "url": "https://github.com/LandyJin/personal_portfolio/issues"
   },
+  "engines": {
+    "node": "11.10.1",
+    "npm": "6.7.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",

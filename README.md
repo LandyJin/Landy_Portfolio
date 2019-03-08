@@ -6,7 +6,7 @@
 
 ### Install: 
 ```bash
-yarn add
+yarn dev
 ```
 
 

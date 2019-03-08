@@ -6,7 +6,7 @@ import '../../css/GetInTouch.css';
 // React Bootstrap
 import "react-bootstrap/dist/react-bootstrap.min.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 export class GetInTouch extends Component {
   render() {

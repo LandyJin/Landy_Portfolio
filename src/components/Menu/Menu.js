@@ -58,10 +58,9 @@ class Menu extends Component {
         <NavLink className="navLink" to="/">
           <div className="btn" onClick={this.closeNav}>HOME</div>
         </NavLink>
-        
-        <a href="#aboutMe" className="btn" onClick={this.closeNav}>ABOUT ME</a>
-		  	<a href="#detailSkills" className="btn" onClick={this.closeNav}>SKILLS</a>
-			  <a href="#resume" className="btn" onClick={this.closeNav}>TIMELINE</a>
+        <a href="https://landyjin.herokuapp.com/#aboutMe" className="btn" onClick={this.closeNav}>ABOUT ME</a>
+		  	<a href="https://landyjin.herokuapp.com/#detailSkills" className="btn" onClick={this.closeNav}>SKILLS</a>
+			  <a href="https://landyjin.herokuapp.com/#resume" className="btn" onClick={this.closeNav}>TIMELINE</a>
         <NavLink className="navLink" to="/getinToch">
           <div className="btn" onClick={this.closeNav}>GET IN TOUCH</div>
         </NavLink>

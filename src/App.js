@@ -5,8 +5,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Compnents
-import MainPage from './components/MainPage/MainPage'
-import GetInTouch from './components/GetInTouch/GetInTouch'
+import MainPage from './components/MainPage/MainPage';
+import GetInTouch from './components/GetInTouch/GetInTouch';
 
 // Menu
 import Menu from './components/Menu/Menu';
@@ -20,7 +20,6 @@ class App extends Component {
             <Menu />
             <Switch>
               <Route exact path="/" component={MainPage} />
-              <Route path="/#aboutMe" component={MainPage} />
               <Route path="/getinToch" component={GetInTouch} />
             </Switch>
           </div>

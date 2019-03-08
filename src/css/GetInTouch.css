@@ -1,0 +1,101 @@
+.getintouch {
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+    background: rgb(233, 223, 219);
+    height: 100%;
+    width: 100%;
+    margin: -5px 0 0 0;
+    padding: 50px;
+    padding-top: 150px
+}
+#getInTouch{
+    margin: 0 auto;
+}
+
+#getInTouchDetail {
+    text-align: center;
+  }
+  
+  #getInTouchDetail h1 {
+      font-family: 'Paytone One';
+      text-align: center; 
+      text-transform: uppercase;
+  }
+  
+  #getInTouchDetail span{
+      font-family: 'Times New Roman'; 
+      font-size: 30px; 
+      font-weight: bold;
+  }
+  
+  #getInTouchDetail p{
+      font-family: 'Inder'; 
+      color: rgb(124, 124, 124)
+  }
+  
+  /* Contact Form */
+  
+  .formWrapper {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .formWrapper textarea,
+  .formWrapper input {
+    width: 100%;
+    border: rgb(197, 197, 197) solid 1px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Inder';
+    color: rgb(197, 197, 197);
+    outline: none;
+    margin-top: 16px;
+    z-index: 1;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(197, 197, 197);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(197, 197, 197);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgb(197, 197, 197);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: rgb(197, 197, 197);
+  }
+  
+  .clickEffect {
+    position: absolute;
+    font-family: 'Inder';
+    color: rgb(161, 161, 161);
+    text-align: left;
+    z-index: 7;
+    margin-top: -110px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.534);
+    padding-left: 5px;
+    padding-right: 5px;
+    display: none;
+    border-radius: 10px;
+  }
+  
+  .subject {
+    margin-top: -52px;
+  }
+  
+  .message {
+    margin-top: -220px;
+  }
+  
+  .submit {
+    background: white;
+    text-transform: uppercase;
+    background: black;
+  }
+  
+  #message {
+    height: 200px;
+  }

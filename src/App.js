@@ -4,8 +4,9 @@ import './App.css';
 // React Router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// Compnent
+// Compnents
 import MainPage from './components/MainPage/MainPage'
+import GetInTouch from './components/GetInTouch/GetInTouch'
 
 // Menu
 import Menu from './components/Menu/Menu';
@@ -19,9 +20,7 @@ class App extends Component {
             <Menu />
             <Switch>
               <Route exact path="/" component={MainPage} />
-              {/* <Route path="/aboutme" component={AboutMe} />
-              <Route path="/location" component={Location} />
-              <Route path="/transactions" component={Transactions} /> */}
+              <Route path="/getinToch" component={GetInTouch} />
             </Switch>
           </div>
         </Router>

@@ -3,13 +3,14 @@
     top: 0px;
     z-index: -10;
     background: rgb(233, 223, 219);
-    height: 100%;
+    height: auto;
     width: 100%;
     margin: -5px 0 0 0;
     padding: 50px;
     padding-top: 150px
 }
 #getInTouch{
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -37,7 +38,6 @@
   /* Contact Form */
   
   .formWrapper {
-    width: 60%;
     margin: auto;
     margin-top: 30px;
   }
@@ -90,12 +90,26 @@
     margin-top: -220px;
   }
   
-  .submit {
-    background: white;
+  .formWrapper .submit {
+    width: 100%;
+    margin-left:0;
+    color: white;
     text-transform: uppercase;
-    background: black;
+    background-color: black;
+    border-color: transparent
   }
   
   #message {
     height: 200px;
+  }
+
+  .invalid {
+    color: red;
+    font-size: 13px !important;
+    position: absolute;
+    left: 45%;
+  }
+
+  .form-group {
+    margin-bottom: 1.3em
   }

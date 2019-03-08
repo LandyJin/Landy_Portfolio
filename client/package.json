@@ -1,0 +1,47 @@
+{
+  "name": "personal_portfolio",
+  "author": "Landy",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "homepage": "https://landyportfolio.herokuapp.com/",
+  "bugs": {
+    "url": "https://github.com/LandyJin/personal_portfolio/issues"
+  },
+  "engines": {
+    "node": "11.10.1",
+    "npm": "6.7.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "aos": "^2.3.4",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.7.3",
+    "font-awesome": "^4.7.0",
+    "react": "^16.8.4",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

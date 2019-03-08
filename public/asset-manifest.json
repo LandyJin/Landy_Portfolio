@@ -1,0 +1,21 @@
+{
+  "main.css": "/static/css/main.c89fc40f.chunk.css",
+  "main.js": "/static/js/main.1ceb29ba.chunk.js",
+  "main.js.map": "/static/js/main.1ceb29ba.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.c5541365.js",
+  "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
+  "static/css/2.549f27cb.chunk.css": "/static/css/2.549f27cb.chunk.css",
+  "static/js/2.e49386d0.chunk.js": "/static/js/2.e49386d0.chunk.js",
+  "static/js/2.e49386d0.chunk.js.map": "/static/js/2.e49386d0.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.b8d6cddec0c663778dfef61cabec8bb1.js": "/precache-manifest.b8d6cddec0c663778dfef61cabec8bb1.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/2.549f27cb.chunk.css.map": "/static/css/2.549f27cb.chunk.css.map",
+  "static/css/main.c89fc40f.chunk.css.map": "/static/css/main.c89fc40f.chunk.css.map",
+  "static/media/App.css": "/static/media/backgroundImg.ce2a2aa5.png",
+  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+  "static/media/index.jpeg": "/static/media/index.8261c672.jpeg",
+  "static/media/index1.mp4": "/static/media/index1.7b2ac97c.mp4",
+  "static/media/moreAboutMe.png": "/static/media/moreAboutMe.5c81c201.png",
+  "static/media/BackCard.css": "/static/media/profile.1e2bf531.jpg"
+}

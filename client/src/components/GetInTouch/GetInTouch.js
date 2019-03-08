@@ -21,7 +21,8 @@ export class GetInTouch extends Component {
             emailError: "",
             messageError: "",
             subjectError: "",
-            isError: false
+            isError: false,
+            submit: false
         }
     
         this.handleChange = this.handleChange;
@@ -39,6 +40,7 @@ export class GetInTouch extends Component {
         })
     }
 
+    // Email Validation
     validate = () => {
         let isError = this.state.isError;
         const errors = {};
@@ -78,10 +80,13 @@ export class GetInTouch extends Component {
 
     async handleSubmit(e) {
         const err = this.validate();
+        this.setState({
+            submit: !err
+        })
         if (!err){
             e.preventDefault();
             const { name, email, message, subject } = this.state;
-            const form = await axios.post('/api/form', {
+            await axios.post('/api/form', {
                 name, email, message, subject
             })
         } else {
@@ -104,9 +109,29 @@ export class GetInTouch extends Component {
         }
     }
 
+    submitStype= () => {
+        if (this.state.submit){
+            return {
+                display: "block",
+            }
+        } else {
+            return {
+                display: "none",
+            }
+        }
+    }
+
   render() {
     return (
       <div className="getintouch">
+        <div className="confirm" style={this.submitStype()}>
+            <div className="confirmWrap">
+                <h1>Thank you for contact me!</h1>
+                <a href="https://landyjin.herokuapp.com">
+                    <button >Back To Home</button>
+                </a>
+            </div>
+        </div>
         <Row>
 			<div id="getInTouch">
 				<div id="getInTouchDetail">

@@ -3,9 +3,15 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 const app = express();
+const path = require('path');
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static('public'));
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+})
 
 app.post('/api/form', (req, res) => {
     nodemailer.createTestAccount((err, account) => {

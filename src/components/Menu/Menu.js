@@ -58,6 +58,7 @@ class Menu extends Component {
         <NavLink className="navLink" to="/">
           <div className="btn" onClick={this.closeNav}>HOME</div>
         </NavLink>
+        
         <a href="#aboutMe" className="btn" onClick={this.closeNav}>ABOUT ME</a>
 		  	<a href="#detailSkills" className="btn" onClick={this.closeNav}>SKILLS</a>
 			  <a href="#resume" className="btn" onClick={this.closeNav}>TIMELINE</a>

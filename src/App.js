@@ -20,6 +20,7 @@ class App extends Component {
             <Menu />
             <Switch>
               <Route exact path="/" component={MainPage} />
+              <Route path="/#aboutMe" component={MainPage} />
               <Route path="/getinToch" component={GetInTouch} />
             </Switch>
           </div>

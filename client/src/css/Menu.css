@@ -21,7 +21,7 @@
     font-weight: bold;
   }
 
-  .btn{
+  .menubtn{
     float: left;
     text-decoration: none;
     left: 30px;
@@ -34,7 +34,7 @@
     color: #f2f2f2;
   }
 
-  .btn:hover {
+  .menubtn:hover {
     border:none;
     background-color:rgba(199, 198, 198, 0.73);
     padding:11px 35px;
@@ -78,7 +78,7 @@
     display: none;
     z-index: 10 !important
   }
-  .btn{
+  .menubtn{
     margin-left: 30px;
   }
 }
@@ -106,7 +106,7 @@
     overflow: hidden;
   }
 
-  .btn {
+  .menubtn {
     float: left;
     width: 100%;
     background-color: transparent;
@@ -120,14 +120,14 @@
     transition: 0.3s;
   }
 
-  .btn:hover:not(:first-child) {
+  .menubtn:hover:not(:first-child) {
     background:rgba(199, 198, 198, 0.73);
     padding:11px 35px;
     color:#1b1b1b;
     transition-duration: .2s;
   }
 
-  .bth:hover:first-child {
+  .menubtn:hover:first-child {
     color: #f1f1f1;
   }
 
@@ -154,6 +154,6 @@
 
 @media screen and (max-height: 450px) and (max-width: 900px) {
   .topnav {position: absolute; width: 100%; z-index: 10;}
-  .btn {font-size: 15px; margin-right: 100px;}
+  .menubtn {font-size: 15px; margin-right: 100px;}
   .sidenav .closebtn {font-size: 20px; margin-top: 10px;}
 }

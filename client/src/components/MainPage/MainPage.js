@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // CSS
 import './../../css/MainPage.css'
-import { CSSTransitionGroup } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 // Components
 import TopOfPage from './../TopOfPage/TopOfPage';
@@ -32,18 +32,18 @@ handleClick() {
 }
   render() {
     return (
-      <div>
+      <div className="hi">
         <TopOfPage skills={this.state.skills} />
         <AboutMe handleClick = {this.handleClick}/>
 
         {/* Click Back Card 'More' Button to More About Me */}
-        <CSSTransitionGroup 
-            transitionName="toggleSlide"
-            transitionEnterTimeout={10}
-            transitionLeaveTimeout={600}
-            timeout = {300}>
-            { this.state.visible ? <MoreAboutMe handleClick = {this.handleClick} /> : null}
-        </CSSTransitionGroup>
+        <TransitionGroup>
+            <CSSTransition timeout={300} classNames="fade">
+                <div>
+                    { this.state.visible ? <MoreAboutMe handleClick = {this.handleClick} /> : ""}
+                </div>
+            </CSSTransition>
+        </TransitionGroup>
         
         <Skills/>
         <Experience/>

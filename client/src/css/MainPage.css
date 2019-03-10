@@ -1,12 +1,19 @@
-.toggleSlide-enter {
+.fade-enter {
     height: 0px;
+    opacity: 0.01;
 }
-.toggleSlide-enter.toggleSlide-enter-active {
+.fade-enter-active {
     height: 300px;
-    -webkit-transition: height 300ms ease;
+    opacity: 1;
+    transition: height 400ms ease !important
 }
 
-.toggleSlide-exit.toggleSlide-exit-active {
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
     height: 0;
-    -webkit-transition: height 300ms ease;
+    opacity: 0.01;
+    transition: height 400ms ease !important
 }

@@ -56,16 +56,16 @@ class Menu extends Component {
           &times;
         </div>
         <NavLink className="navLink" to="/">
-          <div className="btn" onClick={this.closeNav}>HOME</div>
+          <div className="menubtn" onClick={this.closeNav}>HOME</div>
         </NavLink>
         {/* <a href="https://landyjin.herokuapp.com/#aboutMe" className="btn" onClick={this.closeNav}>ABOUT ME</a> */}
-		  	<a href="https://landyjin.herokuapp.com/#detailSkills" className="btn" onClick={this.closeNav}>TECH TOOLS</a>
-			  <a href="https://landyjin.herokuapp.com/#resume" className="btn" onClick={this.closeNav}>EXPERIENCES</a>
+		  	<a href="https://landyjin.herokuapp.com/#detailSkills" className="menubtn" onClick={this.closeNav}>TECH TOOLS</a>
+			  <a href="https://landyjin.herokuapp.com/#resume" className="menubtn" onClick={this.closeNav}>EXPERIENCES</a>
         <NavLink className="navLink" to="/bloglist">
-          <div className="btn" onClick={this.closeNav}>BLOG</div>
+          <div className="menubtn" onClick={this.closeNav}>BLOG</div>
         </NavLink>
         <NavLink className="navLink" to="/getinToch">
-          <div className="btn" onClick={this.closeNav}>GET IN TOUCH</div>
+          <div className="menubtn" onClick={this.closeNav}>CONTACT ME</div>
         </NavLink>
       </div>
       <div className="icon" onClick={this.openNav}>&#9776;</div>

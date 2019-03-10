@@ -9,3 +9,23 @@
     padding: 50px;
     padding-top: 150px
 }
+
+.container {
+    margin-top: 0
+}
+
+.container > .blogButton{
+    margin-top: 0
+}
+
+.blogItems {
+    margin: 20px 0;
+}
+
+.blogItems > a {
+    color: rgb(63, 63, 63)
+}
+
+.blogItems > a:hover{
+   color: darkblue !important;
+}

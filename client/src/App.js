@@ -4,6 +4,10 @@ import './App.css';
 // React Router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+// React Bootstrap
+import "react-bootstrap/dist/react-bootstrap.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // Compnents
 import MainPage from './components/MainPage/MainPage';
 import GetInTouch from './components/GetInTouch/GetInTouch';

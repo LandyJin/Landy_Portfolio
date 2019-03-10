@@ -108,8 +108,10 @@
 
   .btn {
     float: left;
-    margin-left: 20px;
-    margin-right: 100px;
+    width: 100%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -119,7 +121,6 @@
   }
 
   .btn:hover:not(:first-child) {
-    color: #f1f1f1;
     background:rgba(199, 198, 198, 0.73);
     padding:11px 35px;
     color:#1b1b1b;

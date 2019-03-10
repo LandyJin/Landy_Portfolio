@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Compnents
 import MainPage from './components/MainPage/MainPage';
 import GetInTouch from './components/GetInTouch/GetInTouch';
+import Blog from './components/Blog/Blog';
 
 // Menu
 import Menu from './components/Menu/Menu';
@@ -21,6 +22,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={MainPage} />
               <Route path="/getinToch" component={GetInTouch} />
+              <Route path="/blog" component={Blog} />
             </Switch>
           </div>
         </Router>

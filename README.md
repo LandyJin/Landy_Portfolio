@@ -1,10 +1,14 @@
 # Personal Portfolio Website
 
+## Check My Website
+
+https://landyjin.herokuapp.com/
+
 ## Quick start
 
 --------
 
-### Install: 
+### Run the App in Localhost: 
 ```bash
 yarn dev
 ```
@@ -27,6 +31,11 @@ heroku git:clone -a landyportfolio
 cd landyportfolio
 ```
 
+### MLab
+
+MongoDB Hosting
+
+[Mlab](https://mlab.com/)
 
 ### Push to heroku app：
 ```bash

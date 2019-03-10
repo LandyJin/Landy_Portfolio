@@ -63,7 +63,7 @@ export class Skills extends Component {
             <div className="skillDescription">
                 <h1>Technical Tools</h1>
                 <span>————</span>
-                <p>Education And Career Experiences Timeline</p>
+                <p>Technical Tools I'm using</p>
             </div>
             <Row className="processBar" style={{display:"flex"}}>
             {console.log(this.state.charts)}

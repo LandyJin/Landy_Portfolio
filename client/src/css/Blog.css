@@ -1,0 +1,11 @@
+.blog {
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+    background: rgb(233, 223, 219);
+    width: 100%;
+    height: 110%;
+    margin: -5px 0 0 0;
+    padding: 50px;
+    padding-top: 150px
+}

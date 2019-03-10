@@ -7,13 +7,13 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 // Routes
-const blogs = require('./routes/api/Blogs');
+const blogs = require('./routes/api/blogs');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static('public'));
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
@@ -44,7 +44,6 @@ app.post('/api/form', (req, res) => {
 
         // create reusable transporter object using the default SMTP transport
         
-
         let transporter = nodemailer.createTransport({
             host: "smtp.ethereal.email",
             port: 587,
@@ -75,7 +74,7 @@ app.post('/api/form', (req, res) => {
     })
 })
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3002
 
 app.listen(PORT, () => {
     console.log(`Server Listen on ${PORT}`)

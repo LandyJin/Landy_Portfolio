@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const BlogSchema = new Schema ({
     name: {
         type: String,
-        require: true
+        required: true
     },
     date: {
         type: Date,

@@ -8,7 +8,7 @@ import "react-bootstrap/dist/react-bootstrap.min.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Row, Form, FormGroup, FormControl, Button } from "react-bootstrap";
 
-export class Blog extends Component {
+export class BlogList extends Component {
   render() {
     return (
       <div className="blog">
@@ -18,4 +18,4 @@ export class Blog extends Component {
   }
 }
 
-export default Blog
+export default BlogList

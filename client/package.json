@@ -3,7 +3,7 @@
   "author": "Landy",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3002",
   "homepage": "https://landyportfolio.herokuapp.com/",
   "bugs": {
     "url": "https://github.com/LandyJin/personal_portfolio/issues"

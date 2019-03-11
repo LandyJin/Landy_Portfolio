@@ -21,6 +21,8 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newBlog = new Blog({
         name: req.body.name,
+        content: req.body.content,
+        comment: req.body.comment
     })
 
     newBlog.save().then(blog => res.json(blog))
@@ -41,8 +43,14 @@ router.delete('/:id', (req, res) => {
 // @access Public
 
 router.put('/:id', (req, res) => {
+    const upDate = new Blog({
+        name: req.body.name,
+        content: req.body.content
+    })
+
     Blog.findById(req.params.id)
-        .then(blog => blog.save(blog.name = req.body.name).then(() => res.json({success: true})))
+        .then(blog => upDate.save()
+        .then(() => res.json({success: true})))
         .catch(err => res.status(404).json({success: false}))
 });
 

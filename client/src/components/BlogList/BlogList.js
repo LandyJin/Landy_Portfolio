@@ -5,14 +5,14 @@ import '../../css/Blog.css';
 
 // Reactstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, ListGroup, ListGroupItem, Button, Row, Col } from "reactstrap";
+import { Spinner, Container, ListGroup, ListGroupItem, Button, Row, Col } from "reactstrap";
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
+// Reacr Router Dom
+import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 import moment from 'moment'
-
-// Components
-import BlogItem from './BlogItem'
 
 export class BlogList extends Component {
   state = {
@@ -36,22 +36,33 @@ export class BlogList extends Component {
     return (
       <div className="blog">
       {isLoading ? 
-        <h1>Loading...</h1> 
+        <div>
+          <h1>Loading  
+            <Spinner style={{ width: '1rem', height: '1rem' }} type="grow" />
+            <Spinner style={{ width: '1rem', height: '1rem' }} type="grow" />
+            <Spinner style={{ width: '1rem', height: '1rem' }} type="grow" />
+          </h1> 
+        </div>
         :
         <Container>
+          {/* {console.log(this.state.blogs)} */}
           <ListGroup 
             flush
             className="blogItems"
           >
             {this.state.blogs.map(blog => (
               <ListGroupItem 
-                tag="a"
-                href="#" 
+                key={blog._id}
               >
-                <Row>
-                  <Col md="8" style={{fontWeight: "bold"}}>{blog.name}</Col>
-                  <Col md="4" style={{float: 'right'}}>{moment(blog.date).format('L, LT')}</Col>
-                </Row>
+              {/* {console.log(blog._id)} */}
+                <Link to={`/blogItem/${blog._id}`} >
+                  <Row>
+                    <Col style={{fontWeight: "bold"}}>{blog.name}</Col>
+                  </Row>
+                  <Row>
+                    <Col md="8" style={{fontSize: "12px"}}>{moment(blog.date).format('L, LT')}</Col>
+                  </Row>
+                </Link>
               </ListGroupItem>
             ))}
           </ListGroup>
@@ -59,7 +70,7 @@ export class BlogList extends Component {
             color="primary"
             className="blogButton"
           >
-            Add Comment
+            Add New Blog
           </Button>
         </Container>}
       </div>

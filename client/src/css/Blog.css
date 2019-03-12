@@ -5,7 +5,7 @@
     z-index: -10;
     background: rgb(233, 223, 219);
     width: 100%;
-    height: 110%;
+    height: auto;
     margin: -5px 0 0 0;
     padding: 50px;
     padding-top: 150px
@@ -46,7 +46,8 @@
 }
 
 .blogItem > div {
-    border-radius: 0 !important
+    border-radius: 0 !important;
+    height: auto;
 }
 
 .card-title {
@@ -61,4 +62,21 @@
 .card-title + p {
     font-size: 14px;
     color: rgb(109, 109, 109)
+}
+
+/* Add New Blog */
+.addBlog {
+    width: 100%
+}
+
+.addBlog input{
+    margin-top: 10px
+}
+
+.addNewBlogTextarea{
+    height: 200px;
+}
+
+.addBlog button{
+    margin-top: 10px
 }

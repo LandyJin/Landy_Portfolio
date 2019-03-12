@@ -5,7 +5,7 @@ import '../../css/Blog.css';
 
 // Reactstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Spinner, Container, ListGroup, ListGroupItem, Button, Row, Col } from "reactstrap";
+import { Spinner, Container, ListGroup, ListGroupItem, Button, Row, Col, Collapse } from "reactstrap";
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 // Reacr Router Dom
@@ -14,10 +14,18 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import moment from 'moment'
 
+// Components
+import AddNewBlog from './AddNewBlog'
+
 export class BlogList extends Component {
-  state = {
-    isLoading: true,
-    blogs: []
+  constructor(props) {
+    super(props);
+    this.state = { 
+      isLoading: true,
+      blogs: [],
+      collapse: false 
+    }
+    this.toggle = this.toggle.bind(this);
   }
 
   componentDidMount() {
@@ -29,12 +37,39 @@ export class BlogList extends Component {
     });
   }
 
+  // Add New Blog Toggle Button
+  toggle() {
+    this.setState(state => ({ collapse: !state.collapse }));
+  }
+
+  // Add New Blog
+  addNewBlog = (name, content) => {
+    const newBlog = 
+      {
+        "name": name,
+        "content": content
+      }
+    axios.post('/api/blogs', newBlog).then((response) => {
+      console.log(response)
+      this.setState({
+        blogs: [...this.state.blogs, newBlog],
+      })
+      this.componentDidMount()
+    });
+  }
+
+  getStyle = () => {
+    return {
+      height: this.state.isLoading? "110%" : ""
+    }
+  }
+
   render() {
     const {
       isLoading
     } = this.state;
     return (
-      <div className="blog">
+      <div className="blog" style={this.getStyle()}>
       {isLoading ? 
         <div>
           <h1>Loading  
@@ -66,12 +101,20 @@ export class BlogList extends Component {
               </ListGroupItem>
             ))}
           </ListGroup>
+
           <Button
             color="primary"
             className="blogButton"
+            onClick={this.toggle}
+            style={{ marginBottom: '1rem' }}
           >
             Add New Blog
           </Button>
+          <Collapse isOpen={this.state.collapse}>
+            <AddNewBlog
+              addNewBlog = {this.addNewBlog}
+            />
+          </Collapse>
         </Container>}
       </div>
     )

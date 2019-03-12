@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // CSS
 import './../../css/MainPage.css'
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 // Components
 import TopOfPage from './../TopOfPage/TopOfPage';
@@ -10,6 +10,10 @@ import AboutMe from './../AboutMe/AboutMe';
 import MoreAboutMe from './../AboutMe/MoreAboutMe';
 import Experience from './../Experience/Experience';
 import Skills from './../Skills/Skills'
+
+// Reactstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Collapse } from "reactstrap";
 
 export class MainPage extends Component {
     constructor(props) {
@@ -26,10 +30,13 @@ export class MainPage extends Component {
         };
         this.handleClick = this.handleClick.bind(this)
     }
-handleClick() {
-    this.setState({ visible: ! this.state.visible });
-    console.log(this.state.visible)
-}
+// handleClick() {
+//     this.setState({ visible: ! this.state.visible });
+//     console.log(this.state.visible)
+// }
+  handleClick() {
+    this.setState(state => ({ visible: !state.visible }));
+  }
   render() {
     return (
       <div className="hi">
@@ -37,13 +44,18 @@ handleClick() {
         <AboutMe handleClick = {this.handleClick}/>
 
         {/* Click Back Card 'More' Button to More About Me */}
-        <TransitionGroup>
+        {/* <TransitionGroup>
             <CSSTransition timeout={300} classNames="fade">
                 <div>
                     { this.state.visible ? <MoreAboutMe handleClick = {this.handleClick} /> : ""}
                 </div>
             </CSSTransition>
-        </TransitionGroup>
+        </TransitionGroup> */}
+        <Collapse isOpen={this.state.visible}>
+            <MoreAboutMe
+              handleClick = {this.handleClick}
+            />
+        </Collapse>
         
         <Skills/>
         <Experience/>

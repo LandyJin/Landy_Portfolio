@@ -28,6 +28,20 @@ router.post('/', (req, res) => {
     newBlog.save().then(blog => res.json(blog))
 });
 
+// router.put('/:id', (req, res) => {
+//     Blog.findById(req.params.id)
+//         .then(blog => {
+//             const newComment = new Blog({
+//                 comment: req.body.comment
+//             })
+        
+//             blog.comment.push(newComment);
+//             blog.save().then(() => res.json({success: true}))
+//         })
+//         .catch(err => res.status(404).json({success: false}));
+// });
+
+
 // @route DELETE api/blogs
 // @desc Delete a Blog
 // @access Public
@@ -50,7 +64,7 @@ router.put('/:id', (req, res) => {
 
     Blog.findById(req.params.id)
         .then(blog => upDate.save()
-        .then(() => res.json({success: true})))
+                            .then(() => res.json({success: true})))
         .catch(err => res.status(404).json({success: false}))
 });
 
